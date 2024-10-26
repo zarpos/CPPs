@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*   phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 13:18:05 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/10/24 19:54:20 by drubio-m         ###   ########.fr       */
+/*   Created: 2024/10/26 13:03:04 by drubio-m          #+#    #+#             */
+/*   Updated: 2024/10/26 17:42:21 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <cctype>
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP
+# include "contact.hpp"
 
-int main(int argc, char **argv)
+class Phonebook 
 {
-	if (argc == 1)
-	{
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
-		return 0;
-	}
-	for (int i = 1; i < argc; i++)
-	{
-		for (int j = 0; argv[i][j]; j++)
-		{
-			std::cout << (char)std::toupper(argv[i][j]);
-		}
-		if (i < argc - 1)
-		{
-			std::cout << " ";
-		}
-	}
-	std::cout << std::endl;
-	return 0;
-}
+	private:
+		Contact _contacts[8];
+		//int _index;
+		
+	public:
+		//Getters
+		Contact GetContact(int index);
+		void show_contact(void);
+		void show_full_contact(Contact contact);
+		//Setters
+		void SetContact(Contact contact, int index);
+		void add_contact(int& last_contact);
+		Contact new_contact(void);
+};
+
+#endif
