@@ -6,7 +6,7 @@
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 21:21:12 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/10/27 22:21:47 by drubio-m         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:01:18 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
         std::cerr << "Usage: " << argv[0] << " <filename> <s1> <s2>" << std::endl;
         return 1;
     }
-	
+	// Le metemos comprobación para evitar bucle infinito
 	if (std::string(argv[2]).empty())
 	{
         std::cerr << "Error: s1 cannot be empty" << std::endl;
