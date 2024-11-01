@@ -6,7 +6,7 @@
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:20:24 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/10/31 18:22:07 by drubio-m         ###   ########.fr       */
+/*   Updated: 2024/11/01 09:35:09 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FRAGTRAP_HPP
 # include <iostream>
 # include "ClapTrap.hpp"
+
 
 class FragTrap : public ClapTrap
 {

@@ -6,7 +6,7 @@
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:09:57 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/10/31 18:12:41 by drubio-m         ###   ########.fr       */
+/*   Updated: 2024/11/01 09:39:26 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ ScavTrap::ScavTrap() : ClapTrap()
     _health = 100;
     _energy_points = 50;
     _attack_dmg = 20;
-    std::cout << "Default ScavTrap constructor called for " << _name << std::endl;
+    std::cout << GREEN << "Default ScavTrap constructor called for " << _name << RESET << std::endl;
 }
 
 // Constructor con nombre
@@ -27,19 +27,19 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     _health = 100;
     _energy_points = 50;
     _attack_dmg = 20;
-    std::cout << "Name ScavTrap constructor called for " << _name << std::endl;
+    std::cout << GREEN << "Name ScavTrap constructor called for " << _name << RESET << std::endl;
 }
 
 // Constructor de copia
 ScavTrap::ScavTrap(const ScavTrap &st) : ClapTrap(st)
 {
-    std::cout << "ScavTrap copy constructor called for " << _name << std::endl;
+    std::cout << GREEN << "ScavTrap copy constructor called for " << _name << RESET << std::endl;
 }
 
 // Destructor
 ScavTrap::~ScavTrap()
 {
-    std::cout << "ScavTrap destructor called for " << _name << std::endl;
+    std::cout << RED << "ScavTrap destructor called for " << _name << RESET << std::endl;
 }
 
 // Operador de asignación

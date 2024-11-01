@@ -6,7 +6,7 @@
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 12:35:40 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/10/31 12:39:52 by drubio-m         ###   ########.fr       */
+/*   Updated: 2024/11/01 09:49:50 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap(void)
 {
-	std::cout << "Default claptrap constructor called" << std::endl;
+	std::cout << GREEN << "Default claptrap constructor called" << RESET << std::endl;
 	this->_name = "ct";
 	this->_health = 10;
 	this->_energy_points = 10;
@@ -24,7 +24,7 @@ ClapTrap::ClapTrap(void)
 
 ClapTrap::ClapTrap(std::string name)
 {
-	std::cout << "ClapTrap constructor called" << std::endl;
+	std::cout << GREEN << "ClapTrap constructor called" << RESET << std::endl;
 	this->_name = name;
 	this->_health = 10;
 	this->_energy_points = 10;
@@ -33,7 +33,7 @@ ClapTrap::ClapTrap(std::string name)
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << "ClapTrap destructor called" << std::endl;
+	std::cout << RED << "ClapTrap destructor called" << RESET << std::endl;
 	return;
 }
 
@@ -49,7 +49,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &ct)
 ClapTrap::ClapTrap(const ClapTrap &ct)
 {
 	*this = ct;
-	std::cout << "Claptrap copy constructor called" << std::endl;
+	std::cout << GREEN << "Claptrap copy constructor called" << RESET << std::endl;
 	return;
 }
 
