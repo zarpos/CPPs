@@ -6,7 +6,7 @@
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 22:27:57 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/11/01 22:28:26 by drubio-m         ###   ########.fr       */
+/*   Updated: 2024/11/02 13:52:06 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 Character::Character(void)
 {
-	// std::cout << "Default Character constructor called" << std::endl;
+	//std::cout << "Default Character constructor called" << std::endl;
 	this->_name = "Default Character";
 	for (size_t i = 0; i < 4; i++)
 	{
@@ -41,18 +41,10 @@ Character::Character(std::string name)
 	}
 }
 
+// Comentar esta función para evitar spam
 Character::~Character(void)
 {
-	// std::cout << "Character destructor called" << std::endl;
-	// for (int i = 0; i < 100; ++i)
-	// {
-	// 	if (_addresses[i] != NULL)
-	// 	{
-	// 		delete _addresses[i];
-	// 		_addresses[i] = NULL;
-	// 	}
-	// }
-	// delete[] _addresses;
+
 }
 Character &Character::operator=(const Character &c)
 {

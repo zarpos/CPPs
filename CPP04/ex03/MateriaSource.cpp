@@ -6,7 +6,7 @@
 /*   By: drubio-m <drubio-m@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 22:30:45 by drubio-m          #+#    #+#             */
-/*   Updated: 2024/11/01 22:33:45 by drubio-m         ###   ########.fr       */
+/*   Updated: 2024/11/02 13:48:59 by drubio-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ MateriaSource::MateriaSource(void)
 	{
 		_learnedMaterias[i] = NULL;
 	}
-	// std::cout << "Materia Source default constructor" << std::endl;
+	//std::cout << "Materia Source default constructor" << std::endl;
 }
 
 MateriaSource::~MateriaSource() {
